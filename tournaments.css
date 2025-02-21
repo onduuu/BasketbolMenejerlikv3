@@ -1,0 +1,1901 @@
+tournamnet.css
+
+
+
+
+
+
+* Turnuva bölümü stilleri */
+.tournament-section {
+    padding: 20px;
+}
+
+.tournament-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.tournament-card {
+    background: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tournament-card:hover {
+    transform: translateY(-5px);
+}
+
+.tournament-card h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.tournament-card p {
+    color: #ccc;
+    margin: 5px 0;
+}
+
+.join-button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+}
+
+.join-button:hover {
+    background: #2980b9;
+}
+
+.join-button:disabled {
+    background: #95a5a6;
+    cursor: not-allowed;
+}
+
+/* Maç ekranı stilleri */
+.match-section {
+    background: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.match-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.team-side {
+    background: #333;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.match-center {
+    background: #333;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 1px solid #444;
+    border-right: 1px solid #444;
+}
+
+/* Skor tablosu */
+.score-board {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.team-score {
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.match-info {
+    text-align: center;
+    color: #fff;
+}
+
+.time {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.quarter {
+    font-size: 1.2em;
+    color: #999;
+}
+
+/* Oyuncu kartları */
+.player-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.player-card {
+    background: #444;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Maç günlüğü */
+.match-log {
+    height: 300px;
+    overflow-y: auto;
+    background: #222;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.log-entry {
+    padding: 5px;
+    border-bottom: 1px solid #333;
+}
+
+/* Takım listesi */
+.team-list {
+    margin-top: 20px;
+}
+
+.team-row {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background: #2a2a2a;
+    border-bottom: 1px solid #3a3a3a;
+    transition: background 0.3s ease;
+}
+
+.team-row:hover {
+    background: #3a3a3a;
+}
+
+.team-rank {
+    width: 40px;
+    height: 40px;
+    background: #3498db;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.team-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-name {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.team-power {
+    color: #999;
+    font-size: 0.9em;
+}
+
+.team-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.play-button {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.play-button:hover {
+    background: #219a52;
+}
+
+.team-actions i {
+    font-size: 1em;
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+    .match-container {
+        grid-template-columns: 1fr;
+    }
+
+    .match-center {
+        border: none;
+        border-top: 1px solid #444;
+        border-bottom: 1px solid #444;
+    }
+}
+
+/* Maç ekranı stilleri daha sonra eklenecek */
+
+.league-schedule {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.league-schedule h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.team-list {
+    background: #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.team-row {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #3a3a3a;
+    transition: background 0.3s ease;
+}
+
+.team-row:hover {
+    background: #3a3a3a;
+}
+
+.team-rank {
+    width: 40px;
+    height: 40px;
+    background: #3498db;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.team-info {
+    flex: 1;
+}
+
+.team-name {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.team-strength {
+    color: #999;
+    font-size: 0.9em;
+}
+
+.play-button {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.play-button:hover {
+    background: #219a52;
+}
+
+.play-button i {
+    font-size: 0.9em;
+}
+
+.match-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+}
+
+.teams-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+}
+
+.team-side {
+    flex: 1;
+    padding: 15px;
+}
+
+.team-side.home {
+    justify-self: start;
+    margin-left: 20px;
+}
+
+.team-side.away {
+    justify-self: end;
+    margin-right: 20px;
+}
+
+.team-players {
+    display: grid;
+    grid-template-areas:
+        "pf pg"
+        "c c"
+        "sf sg";
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.player-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.player-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.player-card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.player-card .player-info {
+    color: #fff;
+}
+
+.player-card .player-name {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.player-card .player-position {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.player-card .player-energy {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+/* Pozisyon bazlı grid alanları */
+.pg { grid-area: pg; }
+.sg { grid-area: sg; }
+.sf { grid-area: sf; }
+.pf { grid-area: pf; }
+.c { grid-area: c; }
+
+/* Rakip takım için ayna görüntüsü */
+.team-side.away .team-players {
+    transform: scaleX(-1);
+}
+
+.team-side.away .player-info {
+    transform: scaleX(-1); /* Yazıları düzelt */
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #2a2a2a;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.score-board .team-score {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.score-board .time-display {
+    color: #fff;
+}
+
+.score-board .quarter {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.score-board .time {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.game-time {
+    font-size: 1.5em;
+    color: #fff;
+    background: #333;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.court {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.team {
+    width: 35%;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 15px;
+    background: #333;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.player:hover {
+    background: #444;
+}
+
+.player img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.player-info {
+    flex: 1;
+    color: #fff;
+}
+
+.player .name {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 4px;
+}
+
+.player .position {
+    color: #3498db;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.player .stats {
+    color: #999;
+    font-size: 0.9em;
+}
+
+.match-controls {
+    width: 220px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.control-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.control-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 200px;
+}
+
+.control-btn i {
+    font-size: 1.2em;
+    width: 24px;
+    text-align: center;
+}
+
+.control-btn span {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/* Buton hover efektleri */
+.substitution-btn:hover {
+    background: rgba(52, 152, 219, 0.3);
+}
+
+.tactics-btn:hover {
+    background: rgba(46, 204, 113, 0.3);
+}
+
+.timeout-btn:hover {
+    background: rgba(241, 196, 15, 0.3);
+}
+
+.items-btn:hover {
+    background: rgba(231, 76, 60, 0.3);
+}
+
+/* Aktif buton stilleri */
+.control-btn.active {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.start-button, .quit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.start-button {
+    background: #27ae60;
+    color: white;
+}
+
+.quit-button {
+    background: #c0392b;
+    color: white;
+}
+
+.match-stats-panel {
+    background: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.team-stats {
+    flex: 1;
+    padding: 15px;
+    background: #333;
+    border-radius: 8px;
+}
+
+.team-stats h4 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.player-stats {
+    background: #444;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.player-stats .player-name {
+    color: #3498db;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    color: #ccc;
+    font-size: 0.9em;
+    margin: 6px 0;
+}
+
+.stat-row span {
+    flex: 1;
+    text-align: center;
+    padding: 2px 4px;
+}
+
+/* Şut yüzdeleri için özel stil */
+.stat-row span .fieldGoals,
+.stat-row span .threePointers {
+    font-family: monospace;
+    background: #333;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* Süre için özel stil */
+.stat-row span .minutes {
+    font-family: monospace;
+    color: #f1c40f;
+}
+
+/* İstatistik değişimlerinde animasyon için */
+.stat-change {
+    animation: statUpdate 0.5s ease;
+    color: #27ae60;
+}
+
+@keyframes statUpdate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.stat-row span .energy {
+    font-family: monospace;
+    position: relative;
+    padding-right: 20px; /* İkon için yer aç */
+}
+
+.stat-row span .energy::after {
+    content: '⚡';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Enerji seviyesine göre renk değişimi */
+.stat-row span .energy.high {
+    color: #27ae60;
+}
+
+.stat-row span .energy.medium {
+    color: #f1c40f;
+}
+
+.stat-row span .energy.low {
+    color: #e74c3c;
+}
+
+/* Serbest atış istatistiği için stil */
+.stat-row span .freeThrows {
+    font-family: monospace;
+    background: #333;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.substitution-panel {
+    width: 300px;
+    background: #3498db;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 0 20px;
+}
+
+.substitution-panel h4 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.sub-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sub-select {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background: white;
+    color: #333;
+    width: 100%;
+}
+
+.sub-arrows {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    margin: 5px 0;
+}
+
+.sub-button {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background: #2ecc71;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.sub-button:hover:not([disabled]) {
+    background: #27ae60;
+    transform: translateY(-2px);
+}
+
+.sub-button[disabled] {
+    background: #95a5a6;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.quarter-display {
+    color: #fff;
+    font-size: 1.1em;
+    padding: 4px 8px;
+    background: #333;
+    border-radius: 4px;
+}
+
+.match-result-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.match-result-box {
+    background: #1a1a1a;
+    padding: 30px 50px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    animation: popIn 0.5s ease-out;
+}
+
+.match-result-box h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.match-result-box h2.win {
+    color: #4CAF50;
+    text-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.match-score {
+    font-size: 48px;
+    color: #fff;
+    margin: 20px 0;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.rewards {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.xp-reward, .money-reward {
+    font-size: 24px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.xp-reward i {
+    color: #FFD700;
+    margin-right: 10px;
+}
+
+.money-reward i {
+    color: #4CAF50;
+    margin-right: 10px;
+}
+
+.confirm-button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.confirm-button:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+.confirm-button:active {
+    transform: translateY(0);
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.match-control-button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+#speed-control {
+    background-color: #3498db;
+    color: white;
+}
+
+#speed-control:hover {
+    background-color: #2980b9;
+}
+
+#speed-control.fast {
+    background-color: #e74c3c;
+}
+
+#speed-control.fast:hover {
+    background-color: #c0392b;
+}
+
+#speed-control.very-fast {
+    background-color: #c0392b;  /* Daha koyu kırmızı */
+}
+
+#speed-control.very-fast:hover {
+    background-color: #962d22;
+}
+
+/* Takım isimleri için stil */
+.team-name {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    margin-bottom: 20px;
+}
+
+.match-center {
+    justify-self: center;
+    align-self: start;
+    margin-top: 20px;
+}
+
+/* İstatistik Paneli Stilleri */
+.stats-panel {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+.stats-table th {
+    background: rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+    color: #3498db;
+    padding: 12px 8px;
+}
+
+.stats-table td {
+    padding: 10px 8px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stats-table tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* MyTeam istatistikleri için stil */
+.home-stats {
+    color: #fff;
+}
+
+/* Rakip takım istatistikleri için stil */
+.away-stats {
+    color: #ccc;
+}
+
+/* İlk sütun (oyuncu adı) için özel stil */
+.stats-table td:first-child {
+    text-align: left;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+/* Skor göstergesi için margin ayarı */
+.score-display {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* İstatistik Panel Başlığı */
+.stats-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+
+.stats-tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.stats-tab {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 8px 15px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.stats-tab:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.stats-tab.active {
+    background: #3498db;
+}
+
+.full-stats-icon {
+    font-size: 1.2em;
+}
+
+/* İstatistik Tabloları */
+.stats-table-container {
+    display: none;
+}
+
+.stats-table-container.active {
+    display: block;
+}
+
+.team-header {
+    background: rgba(52, 152, 219, 0.2);
+    font-weight: bold;
+    color: #3498db;
+    text-align: left !important;
+    padding: 10px 15px !important;
+}
+
+/* Tam ekran istatistikler için scroll */
+.full-stats .stats-table {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* İlk 5 ve yedek oyuncular için stiller */
+.player-role {
+    color: #888;
+    font-size: 0.8em;
+    margin-left: 8px;
+}
+
+.bench-label {
+    color: #666;
+}
+
+tr.starting {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+tr.bench {
+    opacity: 0.7;
+}
+
+tr.bench:hover {
+    opacity: 1;
+}
+
+/* İstatistik tablosu için ek stiller */
+.stats-table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stats-table tr.bench td {
+    color: #888;
+}
+
+/* Değişiklik overlay */
+.substitution-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.substitution-panel {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.substitution-panel h3 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-players {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.starters, .bench {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.player-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.player-row:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.player-row.selected {
+    background: rgba(52, 152, 219, 0.2);
+    border: 1px solid #3498db;
+}
+
+.player-row img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.player-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.player-info .name {
+    color: #fff;
+    font-weight: 500;
+}
+
+.player-info .position {
+    color: #888;
+    font-size: 0.8em;
+}
+
+.player-info .energy {
+    font-size: 0.8em;
+}
+
+.energy.high { color: #2ecc71; }
+.energy.medium { color: #f1c40f; }
+.energy.low { color: #e74c3c; }
+
+.substitution-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.confirm-btn, .cancel-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.confirm-btn {
+    background: #2ecc71;
+    color: white;
+}
+
+.confirm-btn:disabled {
+    background: #95a5a6;
+    cursor: not-allowed;
+}
+
+.cancel-btn {
+    background: #e74c3c;
+    color: white;
+}
+
+/* Saha ve oyuncular bölümü */
+.court-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+/* Takım adı */
+.team-name {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Alt panel container'ı */
+.bottom-panels {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Oyuncu değişikliği yan panel */
+.substitution-sidebar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background: #1a1a1a;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    overflow-y: auto;
+}
+
+.sub-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sub-panel-header h3 {
+    color: #fff;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.close-sub-panel {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1.2em;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.close-sub-panel:hover {
+    opacity: 1;
+}
+
+.bench-players {
+    padding: 15px;
+}
+
+.bench-player-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.bench-player-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-5px);
+}
+
+.bench-player-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.bench-player-card .player-info {
+    flex: 1;
+}
+
+.bench-player-card .name {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.bench-player-card .position {
+    color: #3498db;
+    font-size: 0.9em;
+    margin-bottom: 4px;
+}
+
+.bench-player-card .energy {
+    font-size: 0.9em;
+    margin-bottom: 4px;
+}
+
+.bench-player-card .stats {
+    display: flex;
+    gap: 10px;
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+.bench-player-card .stats span {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Taktik paneli stilleri */
+.tactics-sidebar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 350px;
+    background: #1a1a1a;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    overflow-y: auto;
+}
+
+.tactics-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tactics-panel-header h3 {
+    color: #fff;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.close-tactics-panel {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1.2em;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.tactics-content {
+    padding: 15px;
+}
+
+.tactics-section {
+    margin-bottom: 20px;
+}
+
+.tactics-section h4 {
+    color: #fff;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tactic-option {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tactic-option:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-5px);
+}
+
+.tactic-option.active {
+    background: rgba(52, 152, 219, 0.2);
+    border: 1px solid #3498db;
+}
+
+.tactic-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.tactic-header h5 {
+    color: #fff;
+    margin: 0;
+    font-size: 1em;
+}
+
+.tactic-status {
+    color: #2ecc71;
+    font-size: 1.2em;
+}
+
+.tactic-option p {
+    color: #aaa;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.tactic-effects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.effect {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.effect.positive {
+    color: #2ecc71;
+}
+
+.effect.negative {
+    color: #e74c3c;
+}
+
+/* Taktik etki ikonları */
+.tactic-effect-icon {
+    font-size: 0.8em;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.tactic-effect-icon.fire {
+    color: #e74c3c;
+    animation: flicker 1.5s infinite;
+}
+
+.tactic-effect-icon.ice {
+    color: #3498db;
+    animation: pulse 2s infinite;
+}
+
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Oyuncu kartı hover durumunda ikon efektlerini vurgula */
+.player-card:hover .tactic-effect-icon.fire {
+    transform: scale(1.2);
+    text-shadow: 0 0 10px rgba(231, 76, 60, 0.5);
+}
+
+.player-card:hover .tactic-effect-icon.ice {
+    transform: scale(1.2);
+    text-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+/* Malzeme paneli stilleri */
+.items-sidebar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background: #1a1a1a;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    overflow-y: auto;
+}
+
+.items-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.items-panel-header h3 {
+    color: #fff;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.close-items-panel {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1.2em;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.items-content {
+    padding: 15px;
+}
+
+.item-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: grab;
+    transition: all 0.3s ease;
+}
+
+.item-card.available:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-5px);
+}
+
+.item-card.depleted {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.item-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.item-card:hover .item-icon {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-name {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.item-description {
+    color: #aaa;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.item-count {
+    color: #3498db;
+    font-size: 0.8em;
+}
+
+/* Sürükle-bırak efektleri */
+.player-card.drag-over {
+    background: rgba(52, 152, 219, 0.2);
+    border: 2px dashed #3498db;
+}
+
+/* Maç başlatma butonu stilleri */
+.start-match-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.start-match-btn {
+    background: #2ecc71;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+}
+
+.start-match-btn:hover {
+    background: #27ae60;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(46, 204, 113, 0.4);
+}
+
+.start-match-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(46, 204, 113, 0.2);
+}
+
+.start-match-btn i {
+    font-size: 1.1em;
+}
+
+/* Maç başladığında butonu gizle */
+.start-match-btn.hidden {
+    display: none;
+}
+
+/* Mevcut buton container'ı için güncelleme */
+.team-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Topla butonu için stil */
+.collect-button,
+.collect-button:hover,
+.collect-button:disabled,
+.collect-button i {
+    display: none;
+}
+
+/* Mevcut stillere eklenecek */
+.tournament-card.locked {
+    opacity: 0.7;
+    filter: grayscale(0.5);
+}
+
+.tournament-card.locked button {
+    background-color: #666;
+    cursor: not-allowed;
+}
+
+.tournament-card.playable {
+    border: 2px solid #4CAF50;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(76, 175, 80, 0.8);
+    }
+}
+
+.tournament-card button:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+}
+
+/* Takım gücü göstergesi için stil */
+.team-power {
+    font-size: 1.1em;
+    color: #FFD700;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Görev panosu container */
+.missions-panel {
+    background: #1a1a1a;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* Görev kartları grid düzeni */
+.missions-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    max-height: 800px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* Kaydırma çubuğu stili */
+.missions-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.missions-list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.missions-list::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+/* Görev kartı boyutları küçültüldü */
+.mission-card {
+    background: #2a2a2a;
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Görev bilgileri */
+.mission-info {
+    flex: 1;
+}
+
+.mission-title {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.mission-description {
+    color: #cccccc;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.mission-reward {
+    color: #4CAF50;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.mission-reward i {
+    color: #FFD700;
+}
+
+/* İlerleme çubuğu container */
+.mission-progress {
+    background: rgba(255, 255, 255, 0.1);
+    height: 20px;
+    border-radius: 12px;
+    margin-top: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* İlerleme çubuğu */
+.progress-bar {
+    background: linear-gradient(90deg, #4CAF50, #45a049);
+    height: 100%;
+    border-radius: 12px;
+    transition: width 0.3s ease;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* İlerleme metni */
+.progress-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* İlerleme çubuğu hover efekti */
+.mission-progress:hover .progress-bar {
+    filter: brightness(1.1);
+}
+
+/* Tamamlanmış görev işareti */
+.mission-status {
+    background: #4CAF50;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin-left: 15px;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+}
+
+/* Tamamlanmış görev kartı */
+.mission-card.completed {
+    opacity: 0.7;
+    background: #222222;
+}
+
+.mission-card.completed .mission-title {
+    text-decoration: line-through;
+    color: #888888;
+}
+
+/* Ödül toplama butonu */
+.claim-reward-btn {
+    background: #FFD700;
+    color: #000;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 15px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.claim-reward-btn:hover {
+    background: #FFC000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+.claim-reward-btn:active {
+    transform: translateY(0);
+}
+
+/* Tamamlanmış görev kartı güncellemesi */
+.mission-card.completed {
+    opacity: 1;
+    background: rgba(76, 175, 80, 0.1);
+    border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.mission-card.completed .mission-title {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+/* Ödül toplanmış görev */
+.mission-card.completed.claimed {
+    opacity: 0.7;
+}
+
+.mission-card.completed.claimed .mission-title {
+    text-decoration: line-through;
+    color: #888;
+} 
